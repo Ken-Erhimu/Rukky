@@ -1,0 +1,368 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: lightgrey;
+}
+
+/* start of sidemenu */
+
+#sidemenu {
+    background: darkgreen;
+    width: 150px;
+    position: absolute;
+    top: 0;
+    bottom: -240px;
+}
+    
+    nav {
+        padding-top:120px;
+}
+nav h1{
+    position: relative;
+    bottom: 105px;
+    margin-left: 40px;
+    color: white;
+    
+}  
+       ul a {
+         display: block;
+         color: white;
+         text-decoration: none;
+           text-align: left;
+         padding: 2px;
+         font-weight: 300;
+           font-size: 13px;
+           transition: all 0.3s ease-in-out;}
+            
+          ul a:hover {
+                background: green;
+                border-left: 3px solid white;
+                padding: 5px;
+                
+            }
+            
+         ul a.active {
+                color: greenyellow;
+                padding: 3px;
+            } 
+.fa{ 
+    color: white;
+    margin-right: 0.8rem;
+    display: inline-block;
+    position: relative;    
+}
+      
+ #b {
+     position: absolute;
+    bottom: 0;
+    margin-bottom: 80px;
+}
+/* end of sidemenu */
+
+
+/* start of header */
+header {
+    position: relative;
+    bottom: 30px;
+    margin-left: 150px;
+    padding: 30px;
+    background: white;
+}
+.search-area{
+    display: inline-block;
+    width: 60%;
+}
+.search-area .fa{
+    position: relative;
+    top: 29px;
+    color: lightgrey;
+    font-size: 1.5rem;
+}
+.search-area input[type=text] {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.1);
+    border: 2px solid lightgrey;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 1rem;
+    font-weight: 100;
+    width: 100%;
+    margin-left: 30px;
+}
+
+.search-area input[type=text]:hover{
+    background: lightgrey;
+}
+.user-area {
+    position: relative;
+    top: 18px;
+    display: inline-block;
+    float: right;
+    margin-right: 20px;
+}
+.user-area .user-img{
+    background: url(uifaces400x400.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 18px;
+    display: inline-block;
+}
+.user-area .name{
+    display: inline-block;
+    float: right;
+    margin-left: 5;
+    text-align: center;
+    font-size: 13px;
+}
+.name p{
+    position: relative;
+    top: 10px;
+}
+ /* end of header */
+
+
+/* start of body */
+.content-area{
+    position: relative;
+    top: -10px;
+     margin-left: 170px;
+    padding-top: 20px;
+    background: white;
+    
+}
+.heading{
+    display: inline-grid;
+    margin-left: 40px;
+}
+.heading a{
+    color: grey;
+    font-size: 12px;
+    
+    }
+.heading .fa{
+    position: relative;
+    top: 2px;
+    font-size: 1rem;
+}
+.fa-caret-down{
+    margin-left: 6px;
+    color: black;   
+}
+.fa-print{
+    color: green;
+}
+.fa-arrow-left{
+    color: gray;  
+}
+.menu #m{
+    margin-left: 10px;
+}
+ .date h1, .date h2{
+     display: inline-grid;  
+}
+.date h2{
+    margin-left: 10px;
+    font-size: 12px;
+    color: grey;
+}
+.date #b1 {
+    margin-left: 20px;
+    background-color: lightgreen;
+    border-radius: 20px;
+    font-size: 12px;
+    text-align: center;
+    width: 90px;
+}
+.date #b2 {
+    margin-left: 10px;
+    background-color: orange;
+    border-radius: 20px;
+    font-size: 12px;
+    text-align: center;
+    width: 90px;
+}
+
+.cards{
+    display: grid;
+    margin-left: 40px;
+    grid-template-columns: 60% 40%;
+}
+.card1{
+    background-color: white;
+    border: 1.5px solid grey;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-right: 40px;   
+}
+.card1 h4{
+    color: gray;
+    margin-left: 15px;
+    font-size: 16px;
+}
+.time h2{
+    display: inline-grid;
+    margin-top: 8px;
+    margin-left: 15px;
+    font-size: 20px;
+    color: grey
+}
+.time #t{
+    margin-left: 50%;
+}
+.p h3{
+    display: inline-grid;
+    margin-left: 15px;
+    margin-top: 1px;
+    font-size: 30;
+    color: darkgreen;
+}
+.p #t{
+    margin-left: 13%
+}
+.card2{
+    background-color: white;
+    border: 1.5px solid grey;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-bottom: 40px;
+}
+.card2 h4{
+    color: gray;
+    margin-left: 15px;
+    font-size: 16px;
+}
+.card2 p{
+    color: grey;
+    margin-left: 15px;
+    font-size: 14px;
+}
+.card3{
+    position: relative;
+    bottom: 25px;
+    background-color: white;
+    border: 1.5px solid grey;
+    border-radius: 8px;
+    margin-right: 40px;
+    margin-bottom: 60px;
+    
+}
+.card3 h4{
+    display: inline-grid;
+    margin-left: 15px;   
+}
+.product #w {
+    margin-left: 35%;
+}
+.product #q {
+    margin-left: 18%;
+}
+.card3 img{
+    margin-left: 15px;    
+}
+.card3 h3, img{
+    display: inline-grid;
+}
+#s{
+    position: relative;
+    bottom: 25px;
+    margin-left: 10px;
+}
+#k{
+    position: relative;
+    bottom: 25px;
+    font-size: 14px;
+    margin-left: 9%;
+}
+#o{
+    position: relative;
+    bottom: 25px;
+    margin-left: 23%;
+}
+p{
+    font-size: 12px;
+    margin-top: 1px;
+}
+
+.card4{
+    position: relative;
+    bottom: 25px;
+    background-color: white;
+    border: 1.5px solid grey;
+    border-radius: 8px;
+    margin-right: 50px;
+}
+.card4 h4{
+    color: gray;
+    margin-left: 15px;
+    font-size: 16px;
+}
+.card4 p{
+    color: grey;
+    margin-left: 15px;
+    font-size: 14px;
+}
+.card5{
+    position: relative;
+    bottom: 70px;
+    background-color: white;
+    border: none;
+    margin-right: 50px;
+    margin-bottom: 140px;
+    
+}
+.card5 .container{
+    display: inline-block;
+    position: relative;
+    font-size: 14px;
+    cursor: pointer;
+}
+.container input{
+    position: relative;
+    top: 4px;
+    width: 20px;
+    height: 18px;
+}
+.card5 #b3{
+     margin-left: 20px;
+    background-color: green;
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+    width: 110px;
+    height: 33px;
+    float: right;
+    margin-top: 50px;
+    color: white;
+}
+.card6{
+    position: relative;
+    bottom: 25px;
+    background-color: white;
+    border: 1.5px solid grey;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-bottom: 130px;
+    
+}
+.card6 h4{
+    color: gray;
+    margin-left: 15px;
+    font-size: 16px;
+}
+.card6 p{
+    color: grey;
+    margin-left: 15px;
+    font-size: 14px;
+}
